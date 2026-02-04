@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from 'react';
+import Childcomponentt from './Childcomponentt.jsx';
+import PureParenttoChild from './PureParenttoChild.jsx';
+import PureChildtoParent from './PureChildtoParent.jsx';
+import ReactFormData from './ReactFormData.jsx';
 
 function App() {
+  const [name,setNAme] = useState('rupali')
+  const msg = 'good morning';
+  const [message,setMsg] = useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>Parent Component</p>
+      <h1>name in parent is :{name}</h1>
+      {/* <h2>as i have passed both name and setname so this will become READ + UPDATE</h2> */}
+      <Childcomponentt ogname ={name} updatedname = {setNAme} />
+      
+      {/* as i have just passed the variable so it become pure parent to child READ ONLY  */}
+      <PureParenttoChild parentmsg = {msg} />
+
+      <p>message from child:{message}</p>
+      {/* here i have pass setMsg that can update, it is child to parent that UPDATE */}
+      <PureChildtoParent valuetoupdate = {setMsg} />
+
+      <ReactFormData/>
     </div>
   );
 }

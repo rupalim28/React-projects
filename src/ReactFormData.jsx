@@ -57,7 +57,7 @@ function ReactFormData(){
                     </select>
                 </div>
                 <div>
-                    <lable>Mobile No.:</lable>
+                    <label>Mobile No.:</label>
                     <input type="tel" name="phone" value={formdata.phone} onChange={handelChange}/>
                 </div>
                 <button type="submit">Submit</button>

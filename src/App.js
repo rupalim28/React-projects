@@ -5,7 +5,9 @@ import PureChildtoParent from './PureChildtoParent.jsx';
 import ReactFormData from './ReactFormData.jsx';
 import UseStateCount from './UseStateCount.jsx';
 import UseEffectFunction from './UseEffectFunction.jsx';
-import UseEffectRealWorld from './UseEffectRealWorld.jsx'
+import UseEffectRealWorld from './UseEffectRealWorld.jsx';
+import UseRefFunction from './UseRefFunction.jsx';
+import UseRefEffectState from './UseRefEffectState.jsx';
 
 function App() {
   const [name,setNAme] = useState('rupali')
@@ -29,6 +31,8 @@ function App() {
       <UseStateCount />
       <UseEffectFunction/>
       <UseEffectRealWorld/>
+      <UseRefFunction/>
+      <UseRefEffectState/>
     </div>
   );
 }

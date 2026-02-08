@@ -3,6 +3,9 @@ import Childcomponentt from './Childcomponentt.jsx';
 import PureParenttoChild from './PureParenttoChild.jsx';
 import PureChildtoParent from './PureChildtoParent.jsx';
 import ReactFormData from './ReactFormData.jsx';
+import UseStateCount from './UseStateCount.jsx';
+import UseEffectFunction from './UseEffectFunction.jsx';
+import UseEffectRealWorld from './UseEffectRealWorld.jsx'
 
 function App() {
   const [name,setNAme] = useState('rupali')
@@ -23,6 +26,9 @@ function App() {
       <PureChildtoParent valuetoupdate = {setMsg} />
 
       <ReactFormData/>
+      <UseStateCount />
+      <UseEffectFunction/>
+      <UseEffectRealWorld/>
     </div>
   );
 }

@@ -8,6 +8,8 @@ import UseEffectFunction from './UseEffectFunction.jsx';
 import UseEffectRealWorld from './UseEffectRealWorld.jsx';
 import UseRefFunction from './UseRefFunction.jsx';
 import UseRefEffectState from './UseRefEffectState.jsx';
+import ExpensiveCalc from './UseMemoFunction.jsx'
+import Parent from './UseCallbackFunction.jsx'
 
 function App() {
   const [name,setNAme] = useState('rupali')
@@ -33,6 +35,8 @@ function App() {
       <UseEffectRealWorld/>
       <UseRefFunction/>
       <UseRefEffectState/>
+      <ExpensiveCalc/>
+      <Parent/>
     </div>
   );
 }
